@@ -1,8 +1,19 @@
 import { Box, VStack, Heading, Text, Image, HStack, Container, UnorderedList, ListItem } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
     <Box>
+      {/* Navigation */}
+      <Box as="nav" bg="gray.800" py={4}>
+        <Container maxW="6xl">
+          <HStack spacing={8}>
+            <Link to="/" style={{ color: 'white', fontSize: 'xl' }}>Home</Link>
+            <Link to="/contact" style={{ color: 'white', fontSize: 'xl' }}>Contact</Link>
+          </HStack>
+        </Container>
+      </Box>
+
       {/* Header */}
       <Box as="header" bg="gray.800" py={4}>
         <Container maxW="6xl">
